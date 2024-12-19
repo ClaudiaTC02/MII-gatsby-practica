@@ -14,7 +14,7 @@ const IndexPage = () => {
         </p>
         <StaticImage
           src="../images/news.jpg"  
-          alt="Imagen de notiicas en la landing"
+          alt="Imagen de noticias en la landing"
           placeholder="blurred"
           layout="constrained"
         />
