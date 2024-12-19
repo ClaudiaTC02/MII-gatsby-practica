@@ -25,7 +25,7 @@ Se utiliza el plugin `gatsby-source-custom-api` para especificar el esquema de l
 
 ## Requisitos Previos
 - **Node.js**: La versión de Node utilizada es `v22.11.0`. Esta versión está especificada en el archivo `.node-version` para facilitar su gestión con herramientas como `fnm` o similares.
-- **API Token**: Es necesario obtener un API Token para usar la API de noticias desde [The News API](https://api.thenewsapi.com). Este token debe colocarse en un archivo `.env` en la raíz del proyecto, con la siguiente estructura:
+- **API Token**: Es necesario obtener un API Token para usar la API de noticias desde [The News API](https://www.thenewsapi.com/). Este token debe colocarse en un archivo `.env` en la raíz del proyecto, con la siguiente estructura:
   ```env
   API_TOKEN=tu_token_aqui
   ```
