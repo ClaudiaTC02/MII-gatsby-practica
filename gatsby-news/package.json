@@ -16,7 +16,9 @@
     "lint": "eslint ./src/**/*.js"
   },
   "dependencies": {
+    "dotenv": "^16.4.7",
     "gatsby": "^5.14.0",
+    "gatsby-plugin-env-variables": "^2.3.0",
     "gatsby-plugin-image": "^3.14.0",
     "gatsby-plugin-sharp": "^5.14.0",
     "gatsby-source-custom-api": "^2.3.6",

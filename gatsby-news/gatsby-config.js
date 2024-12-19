@@ -2,6 +2,10 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 
+require("dotenv").config({
+  path: `.env`,
+});
+
 module.exports = {
   siteMetadata: {
     siteUrl: `https://www.yourdomain.tld`,
@@ -15,7 +19,7 @@ module.exports = {
     {
       resolve: "gatsby-source-custom-api",
       options: {
-        url: "https://api.thenewsapi.com/v1/news/all?api_token=aUi5LZIcbjPnXAE0k7MUUsTkGokoEsmrO08zbQFz&categories=tech&language=en,es&limit=3",
+        url: `https://api.thenewsapi.com/v1/news/all?api_token=${process.env.API_TOKEN}&categories=tech&language=en,es&limit=3`,
         rootKey: "techNews",
         schemas: {
           techNews: `
@@ -47,7 +51,7 @@ module.exports = {
     {
       resolve: "gatsby-source-custom-api",
       options: {
-        url: "https://api.thenewsapi.com/v1/news/all?api_token=aUi5LZIcbjPnXAE0k7MUUsTkGokoEsmrO08zbQFz&categories=sports&language=en,es&limit=3",
+        url: `https://api.thenewsapi.com/v1/news/all?api_token=${process.env.API_TOKEN}&categories=sports&language=en,es&limit=3`,
         rootKey: "sportsNews",
         schemas: {
           sportsNews: `
@@ -79,7 +83,7 @@ module.exports = {
     {
       resolve: "gatsby-source-custom-api",
       options: {
-        url: "https://api.thenewsapi.com/v1/news/all?api_token=aUi5LZIcbjPnXAE0k7MUUsTkGokoEsmrO08zbQFz&categories=health&language=en,es&limit=3",
+        url: `https://api.thenewsapi.com/v1/news/all?api_token=${process.env.API_TOKEN}&categories=health&language=en,es&limit=3`,
         rootKey: "healthNews",
         schemas: {
           healthNews: `
@@ -106,6 +110,12 @@ module.exports = {
             relevance_score: Float
           `,
         },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-env-variables",
+      options: {
+        allowList: ["API_TOKEN"],
       },
     },
   ],
