@@ -1,0 +1,103 @@
+.landingContainer {
+  text-align: center;
+  padding: 2rem;
+}
+
+.landingContainer img {
+  width: 100%; 
+  height: 250px; 
+  object-fit: cover; 
+  margin-bottom: 1.5rem;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  color: #333;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.features {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.featuresTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; 
+  margin-top: 1.5rem;
+}
+
+.card {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(
+    -10px
+  ); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.testimonials {
+  margin-top: 3rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.testimonials h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.testimonials p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.cta {
+  margin-top: 3rem;
+  background-color: #f0f0f0;
+  border: 2px solid #004a99;
+  border-radius: 20px;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1.2rem;
+}

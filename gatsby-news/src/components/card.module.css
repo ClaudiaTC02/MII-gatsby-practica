@@ -1,0 +1,88 @@
+.newsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 490px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 20px;
+}
+
+.title {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.snippet {
+  color: #666;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.cardFooter {
+  font-size: 0.9em;
+  color: #888;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.ratingContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.readMore {
+  color: #007acc;
+  text-decoration: none;
+}
+
+
+.topicTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+
+.backToHome {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 10px 20px;
+  background-color: #007acc;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.backToHome:hover {
+  background-color: #005f99;
+}
