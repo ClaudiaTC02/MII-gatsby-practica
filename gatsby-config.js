@@ -7,6 +7,7 @@ require("dotenv").config({
 });
 
 module.exports = {
+  pathPrefix: "/MII-gatsby-practica/",
   siteMetadata: {
     siteUrl: `https://www.yourdomain.tld`,
     title: "GatsbyNews.com"
@@ -16,6 +17,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-github-pages`,
     {
       resolve: "gatsby-source-custom-api",
       options: {
